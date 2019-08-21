@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="horizontal"
+    android:id="@+id/activity_main3"
+    tools:context=".Main3Activity">
+
+    <FrameLayout
+        android:id="@+id/logo_gofood"
+        android:layout_marginTop="30dp"
+        android:layout_width="225dp"
+        android:layout_height="300dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:src="@drawable/menu_gofood" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#5DEF7F"
+            android:text="Order Food"
+            android:textAlignment="center"
+            android:layout_marginTop="250dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/txt_namapemesan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/logo_gofood"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="125dp"
+            android:textSize="20dp"
+            android:id="@+id/edt_txtnama"
+            android:hint="Masukkan Nama"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/txt_alamatpemesan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_namapemesan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="125dp"
+            android:textSize="20dp"
+            android:id="@+id/edt_txtalamat"
+            android:hint="Masukkan Alamat"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/txt_pesananpemesan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_alamatpemesan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="125dp"
+            android:textSize="20dp"
+            android:id="@+id/edt_txtpesan"
+            android:hint="Masukkan Pesanan"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="ORDER"
+        android:layout_marginTop="50dp"
+        android:background="#5DEF7F"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_pesananpemesan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
